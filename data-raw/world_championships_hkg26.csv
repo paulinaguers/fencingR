@@ -1,0 +1,85 @@
+fencer,country,sex,weapon,passed_pool,touches_given,touches_received,pool_index,pool_win_rate,round_reached
+Larissa Eifler,GER,Female,sabre,yes,25,12,13,0.83,Gold
+Sara Balzer,FRA,Female,sabre,yes,24,15,9,0.67,Silver
+Toscane Tori,FRA,Female,sabre,yes,23,16,7,0.67,Bronze
+Sugar Katinka Battai,HUN,Female,sabre,yes,24,14,10,0.83,Bronze
+Sarah Noutcha,FRA,Female,sabre,yes,22,17,5,0.67,Table of 8
+Alina Mikhailova,AIN,Female,sabre,yes,21,18,3,0.50,Table of 8
+Zaynab Dayibekova,UZB,Female,sabre,yes,23,13,10,0.83,Table of 16
+Sebin Choi,KOR,Female,sabre,yes,20,19,1,0.50,Table of 16
+Yoana Ilieva,BUL,Female,sabre,yes,22,15,7,0.67,Table of 16
+Lucia Martin-Portugues,ESP,Female,sabre,yes,19,20,-1,0.50,Table of 32
+Michela Battiston,ITA,Female,sabre,yes,21,16,5,0.67,Table of 32
+Misaki Emura,JPN,Female,sabre,yes,24,11,13,0.83,Table of 16
+Hayoung Jeon,KOR,Female,sabre,yes,20,18,2,0.50,Table of 32
+Maia Chamberlain,USA,Female,sabre,yes,18,21,-3,0.33,Table of 64
+Manon Apithy-Brunet,FRA,Female,sabre,yes,22,14,8,0.67,Table of 16
+Sophie Liu,USA,Female,sabre,yes,17,22,-5,0.33,Table of 64
+Yana Egorian,AIN,Female,sabre,yes,25,10,15,1.00,Table of 8
+Alina Komashchuk,UKR,Female,sabre,yes,19,19,0,0.50,Table of 32
+Qimiao Pan,CHN,Female,sabre,yes,16,23,-7,0.33,Table of 64
+Nisanur Erbil,TUR,Female,sabre,yes,21,17,4,0.67,Table of 32
+Xueyi Rao,CHN,Female,sabre,yes,18,20,-2,0.50,Table of 64
+Yui Sano,JPN,Female,sabre,yes,19,18,1,0.50,Table of 32
+Palina Kaspiarovich,AZE,Female,sabre,yes,15,24,-9,0.33,Table of 64
+Luca Szucs,HUN,Female,sabre,yes,22,15,7,0.67,Table of 16
+Martina Favaretto,ITA,Female,foil,yes,25,10,15,1.00,Gold
+Alice Volpi,ITA,Female,foil,yes,24,13,11,0.83,Silver
+Lee Kiefer,USA,Female,foil,yes,23,15,8,0.67,Bronze
+Ines Boubakri,TUN,Female,foil,yes,22,16,6,0.67,Bronze
+Pauline Ranvier,FRA,Female,foil,yes,21,17,4,0.67,Table of 8
+Ysaora Thibus,FRA,Female,foil,yes,23,12,11,0.83,Table of 8
+Eleanor Harvey,CAN,Female,foil,yes,20,18,2,0.50,Table of 16
+Anne Sauer,GER,Foreign,foil,yes,21,16,5,0.67,Table of 16
+Julia Walczyk-Klimaszyk,POL,Female,foil,yes,19,20,-1,0.50,Table of 32
+Chen Qingyuan,CHN,Female,foil,yes,22,15,7,0.67,Table of 16
+Sera Song,KOR,Female,epee,yes,25,11,14,0.83,Gold
+Marie-Florence Candassamy,FRA,Female,epee,yes,24,13,11,0.83,Silver
+Vivian Kong Man Wai,HKG,Female,epee,yes,23,14,9,0.67,Bronze
+Sun Yiwen,CHN,Female,epee,yes,24,12,12,0.83,Bronze
+Alberta Santuccio,ITA,Female,epee,yes,22,16,6,0.67,Table of 8
+Nelli Differt,EST,Female,epee,yes,21,17,4,0.67,Table of 8
+Vlada Kharkova,UKR,Female,epee,yes,20,18,2,0.50,Table of 16
+Katrina Lehis,EST,Female,epee,yes,22,15,7,0.67,Table of 16
+Isabel Di Tella,ARG,Female,epee,yes,19,19,0,0.50,Table of 32
+Kaylin Hsieh Sin-yan,HKG,Female,epee,yes,23,14,9,0.67,Table of 16
+Alexander Choupenitch,CZE,Male,foil,yes,25,9,16,1.00,Gold
+Tommaso Marini,ITA,Male,foil,yes,24,12,12,0.83,Silver
+Enzo Lefort,FRA,Male,foil,yes,23,15,8,0.67,Bronze
+Nick Itkin,USA,Male,foil,yes,24,13,11,0.83,Bronze
+Cheung Ka Long,HKG,Male,foil,yes,25,10,15,1.00,Table of 8
+Gerek Meinhardt,USA,Male,foil,yes,22,17,5,0.67,Table of 8
+Kyosuke Matsuyama,JPN,Male,foil,yes,21,18,3,0.50,Table of 16
+Alaaeldin Abouelkassem,EGY,Male,foil,yes,20,19,1,0.50,Table of 16
+Mohamed Hamza,EGY,Male,foil,yes,23,14,9,0.67,Table of 8
+Aron Szilagyi,HUN,Male,sabre,yes,25,10,15,1.00,Gold
+Sandro Bazadze,GEO,Male,sabre,yes,24,13,11,0.83,Silver
+Luigi Samele,ITA,Male,sabre,yes,23,15,8,0.67,Bronze
+Ziad Elssify,EGY,Male,sabre,yes,22,16,6,0.67,Bronze
+Colin Heathcock,USA,Male,sabre,yes,24,12,12,0.83,Table of 8
+Bolad Apithy,FRA,Male,sabre,yes,21,17,4,0.67,Table of 8
+Farès Ferjani,TUN,Male,sabre,yes,20,19,1,0.50,Table of 16
+Oh Sang-uk,KOR,Male,sabre,yes,25,9,16,1.00,Table of 8
+Koki Kano,JPN,Male,epee,yes,25,11,14,0.83,Gold
+Gergely Siklosi,HUN,Male,epee,yes,24,13,11,0.83,Silver
+Yannick Borel,FRA,Male,epee,yes,23,14,9,0.67,Bronze
+Romain Cannone,FRA,Male,epee,yes,24,12,12,0.83,Bronze
+Davide Di Veroli,ITA,Male,epee,yes,22,16,6,0.67,Table of 8
+Kazuhiro Kano,JPN,Male,epee,yes,21,18,3,0.50,Table of 16
+Elio Bisso,ITA,Male,epee,yes,19,20,-1,0.50,Table of 32
+Akram Bounabi,ALG,Male,sabre,no,10,25,-15,0.17,Pools
+Zacharia Bounachad,ALG,Male,sabre,no,12,24,-12,0.17,Pools
+Lotfi Ibrihen,ALG,Male,sabre,no,8,25,-17,0.00,Pools
+Naila Benchekor,ALG,Female,sabre,no,11,24,-13,0.17,Pools
+Zohra Nora Kehli,ALG,Female,sabre,no,14,22,-8,0.33,Pools
+Kaouther Mohamed Belkebir,ALG,Female,sabre,no,13,23,-10,0.17,Pools
+Selyan Aoudia,ALG,Male,foil,no,9,25,-16,0.00,Pools
+Salim Heroui,ALG,Male,foil,no,15,21,-6,0.33,Pools
+Rayan Sadli,ALG,Male,foil,no,12,23,-11,0.17,Pools
+Luis Macedo,ANG,Male,epee,no,14,22,-8,0.33,Pools
+Sonia Zeboudj,ALG,Female,epee,no,11,24,-13,0.17,Pools
+Micaela Sofia Silva,ARG,Female,sabre,no,13,22,-9,0.33,Pools
+Alec Brooke,ARG,Male,foil,no,16,20,-4,0.33,Pools
+Ivan Salvador Groupierre Ramiro,ARG,Male,foil,no,10,25,-15,0.00,Pools
+Abdelrahman Tolba,EGY,Male,foil,no,14,22,-8,0.33,Pools
+Yara Elsharkawy,EGY,Female,foil,no,12,23,-11,0.17,Pools
