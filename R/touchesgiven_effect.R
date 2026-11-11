@@ -30,6 +30,7 @@
 #' \dontrun{
 #' touchesgiven_effect(fencing_data)
 #' }
+
 touchesgiven_effect <- function(dataset) {
   # Chronological competition order
   round_levels <- c(
