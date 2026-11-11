@@ -2,3 +2,4 @@
 
 export(get_medallists)
 export(plot_medallists_by_country)
+export(touchesgiven_effect)
