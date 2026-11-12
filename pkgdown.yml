@@ -1,0 +1,9 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  vineta_fencingR: vineta_fencingR.html
+last_built: 2026-11-12T18:03Z
+urls:
+  reference: https://paulinaguers.github.io/fencingR/reference
+  article: https://paulinaguers.github.io/fencingR/articles
