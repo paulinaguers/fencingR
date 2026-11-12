@@ -1,0 +1,83 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+## fencingR
+
+**fencingR** provides a tidyverse-native framework for processing, analyzing, and visualizing competitive fencing tournament data. From pool stage efficiency metrics to direct elimination seeding gradients and national delegation benchmarking, the package streamlines quantitative performance analysis across all three weapons (*Epee*, *Foil*, and *Sabre*).Installation
+
+## Example Installation
+
+You can install the development version of fencingR from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("paulinaguers/fencingR")
+```
+
+## Built-in Dataset: 
+
+The package includes `fencing_wc2026`, a curated dataset of 151 athlete records from a World Championship scenario, capturing pool phase volume, win rates, and final tournament progression.
+
+```{r}
+library(fencingR)
+
+#to give it a look
+utils::head(fencing_wc2026, 5)
+```
+
+- **`touches_given` & `touches_received`**: Offensive and defensive touch volumes during the pool stage.
+
+- **`pool_index`**: Net touch indicator ($TS - TR$).
+
+- **`pool_win_rate`**: Proportion of pool bouts won.
+
+- **`round_reached`**: Final tournament stage achieved (`Pools` through `Gold`).
+
+## Quick Workflow
+
+### 1. National Delegation Benchmarking
+
+Evaluate depth and average pool efficiency across countries while filtering out small sample sizes (`min_fencers = 12` by default):
+
+```{r}
+country_pool_index(fencing_wc2026, min_fencers = 12)
+```
+
+### 2. Pool Efficiency vs. Tournament Progression
+
+Analyze how offensive output during pools translates into direct elimination seeding and podium finishes across weapons and sexes:
+
+```{r}
+touchesgiven_effect(fencing_wc2026)
+```
+
+### 3. Podium Extraction & Distribution
+
+Isolate medalists (`Gold`, `Silver`, `Bronze`) and visualize medal counts by national federation and weapon:
+
+```{r}
+podium <- get_medallists(fencing_wc2026)
+utils::head(podium, 6)
+
+plot_medallists_by_country(fencing_wc2026)
+```
+
+## Learn More
+
+For a comprehensive walkthrough of the analytical methodology and all package functions, read the introductory vignette:
+
+```{r}
+vignette("Introduction to fencingR", package = "fencingR")
+```
