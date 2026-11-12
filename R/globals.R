@@ -3,5 +3,6 @@ utils::globalVariables(c(
   "fencer",
   "country",
   "sex",
-  "weapon"
+  "weapon",
+  "pool_win_rate"
 ))
