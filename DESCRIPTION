@@ -2,7 +2,7 @@ Package: fencingR
 Title: fencingR calculates stats analyses data from fencing competitions
 Version: 0.0.0.9000
 Authors@R: 
-    person("Paulina", "Guerscovich", "paugrscovich@gmail.com", role = c("aut", "cre"))
+    person("Paulina", "Guerscovich", email= "paugrscovich@gmail.com", role = c("aut", "cre"))
 Description: This is an experimental package to practice R package-buildings and data manipulation, focused on fencing
 License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
@@ -15,3 +15,7 @@ Imports:
     dplyr,
     ggplot2,
     utils
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
