@@ -31,10 +31,11 @@ competitors and displaying a consistent performance gradient from early pool eli
 up to podium finishes (\emph{Bronze}, \emph{Silver}, \emph{Gold}).
 
 The visualization uses a horizontal orientation (\code{y = round_reached}, \code{x = mean_touches})
-with a minor dodge adjustment to prevent overlapping lines between sexes.
+with a minor vertical dodge adjustment (\code{orientation = "y"}) to prevent overlapping
+points and lines between sexes without distorting the exact horizontal touch values.
 }
 \examples{
 \dontrun{
-touchesgiven_effect(fencing_data)
+touchesgiven_effect(fencing_wc2026)
 }
 }

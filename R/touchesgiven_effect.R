@@ -17,7 +17,8 @@
 #' up to podium finishes (\emph{Bronze}, \emph{Silver}, \emph{Gold}).
 #'
 #' The visualization uses a horizontal orientation (\code{y = round_reached}, \code{x = mean_touches})
-#' with a minor dodge adjustment to prevent overlapping lines between sexes.
+#' with a minor vertical dodge adjustment (\code{orientation = "y"}) to prevent overlapping
+#' points and lines between sexes without distorting the exact horizontal touch values.
 #'
 #' @param dataset A data.frame or tibble containing fencing competition data with
 #'   the required columns: \code{fencer}, \code{country}, \code{sex}, \code{weapon},
@@ -28,9 +29,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' touchesgiven_effect(fencing_data)
+#' touchesgiven_effect(fencing_wc2026)
 #' }
-
 touchesgiven_effect <- function(dataset) {
   # Chronological competition order
   round_levels <- c(
@@ -53,14 +53,14 @@ touchesgiven_effect <- function(dataset) {
       .groups = "drop"
     )
 
-  # Avoid overlapping:
-  pd <- ggplot2::position_dodge(width = 0.25)
+  # Vertical dodge along the discrete y-axis
+  pd <- ggplot2::position_dodge(width = 0.25, orientation = "y")
 
   p <- ggplot2::ggplot(
     summary_data,
     ggplot2::aes(x = mean_touches, y = round_reached, color = sex, group = sex)
   ) +
-    ggplot2::geom_line(linewidth = 1, alpha = 0.8, position = pd) +
+    ggplot2::geom_line(linewidth = 1, alpha = 0.8, position = pd, orientation = "y") +
     ggplot2::geom_point(size = 2.5, position = pd) +
     ggplot2::facet_wrap(~ weapon, ncol = 3) +
     ggplot2::labs(
