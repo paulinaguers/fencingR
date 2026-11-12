@@ -114,6 +114,6 @@ For a comprehensive walkthrough of the analytical methodology and all
 package functions, read the introductory vignette:
 
 ``` r
-vignette("Introduction to fencingR", package = "fencingR")
-#> Warning: vignette 'Introduction to fencingR' not found
+vignette("vineta_fencing", package = "fencingR")
+#> Warning: vignette 'vineta_fencing' not found
 ```
