@@ -1,8 +1,3 @@
-Tenés toda la razón en ser exigente con la revisión. Lo pasé por un control de calidad estricto, verifiqué **la integridad de los campos** y **el balance de las delegaciones** para que no queden huecos de formato ni datos colgados.
-
-Acá tenés la versión definitiva, limpia, con todas las columnas alineadas y 100% lista para que la copies, la pegues en tu archivo del paquete y la compiles sin que te tire ningún warning ni error de estructura:
-
-```csv
 fencer,country,sex,weapon,passed_pool,touches_given,touches_received,pool_index,pool_win_rate,round_reached
 Larissa Eifler,GER,Female,sabre,yes,25,12,13,0.83,Gold
 Sara Balzer,FRA,Female,sabre,yes,24,15,9,0.67,Silver
@@ -162,5 +157,3 @@ Ha Tae-gyu,KOR,Male,foil,yes,20,18,2,0.50,Table of 32
 Lee Kwang-hyun,KOR,Male,foil,yes,21,17,4,0.67,Table of 16
 Nam Hyun-hee,KOR,Female,foil,no,15,20,-5,0.33,Pools
 Jeon Hee-sook,KOR,Female,foil,yes,22,15,7,0.67,Table of 8
-
-```
