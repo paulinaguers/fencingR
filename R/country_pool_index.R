@@ -2,20 +2,26 @@
 #'
 #' @description
 #' Computes the average win rate in the pool stage for each country, filtering
-#' out delegations with insufficient sample sizes to ensure robust statistical comparison.
+#' out delegations with fewer competitors than the specified minimum threshold
+#' to ensure robust statistical representation.
 #'
 #' @details
 #' This function aggregates individual fencer pool performance (\code{pool_win_rate})
 #' at the national federation level.
 #'
-#' \strong{Analytical Rationale:}
+#' \strong{Analytical Rationale & Sample Size Criterion:}
 #' Evaluating pool performance by country highlights structural dominance and the depth
-#' of talent across national teams from the very first phase of the tournament.
-#' By enforcing a minimum sample size filter (\code{n() > 5}), the function mitigates
-#' distortion caused by delegations with very few competitors.
+#' of talent across national teams. By enforcing a minimum threshold (\code{min_fencers},
+#' defaulting to 12), the function guarantees that a national federation has sufficient
+#' representation across categories (e.g., accounting for multiple entries across sexes
+#' and weapon types), preventing statistical distortion caused by delegations with
+#' very few competitors or isolated individual entries.
 #'
 #' @param dataset A data.frame or tibble containing fencing competition data with
 #'   the required columns: \code{country} and \code{pool_win_rate}.
+#' @param min_fencers Numeric. The minimum number of entries required for a country
+#'   to be included in the ranking. Default is \code{12}, ensuring multi-entry representation
+#'   across weapon types and sexes.
 #'
 #' @return A tibble containing the country code and its corresponding average pool win rate,
 #'   arranged in descending order.
@@ -23,13 +29,12 @@
 #'
 #' @examples
 #' \dontrun{
-#' country_pool_index(fencing_data)
+#' country_pool_index(fencing_data, min_fencers = 12)
 #' }
-#'
-country_pool_index <- function(dataset) {
+country_pool_index <- function(dataset, min_fencers = 12) {
   pool_win_rate_by_country <- dataset |>
     dplyr::group_by(country) |>
-    dplyr::filter(dplyr::n() > 5) |>
+    dplyr::filter(dplyr::n() >= min_fencers) |>
     dplyr::summarise(
       average_pool_win_rate = mean(pool_win_rate, na.rm = TRUE),
       .groups = "drop"
