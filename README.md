@@ -115,4 +115,6 @@ plot_medallists_by_country(fencing_wc2026)
 For a comprehensive walkthrough of the analytical methodology and all
 package functions, read the introductory vignette:
 
-\`\`\`r vignette(“Introduction to fencingR”, package = “fencingR”)
+``` r
+vignette("Introduction to fencingR", package = "fencingR")
+```
