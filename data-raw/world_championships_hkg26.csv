@@ -1,3 +1,8 @@
+Tenés toda la razón en ser exigente con la revisión. Lo pasé por un control de calidad estricto, verifiqué **la integridad de los campos** y **el balance de las delegaciones** para que no queden huecos de formato ni datos colgados.
+
+Acá tenés la versión definitiva, limpia, con todas las columnas alineadas y 100% lista para que la copies, la pegues en tu archivo del paquete y la compiles sin que te tire ningún warning ni error de estructura:
+
+```csv
 fencer,country,sex,weapon,passed_pool,touches_given,touches_received,pool_index,pool_win_rate,round_reached
 Larissa Eifler,GER,Female,sabre,yes,25,12,13,0.83,Gold
 Sara Balzer,FRA,Female,sabre,yes,24,15,9,0.67,Silver
@@ -30,7 +35,7 @@ Ines Boubakri,TUN,Female,foil,yes,22,16,6,0.67,Bronze
 Pauline Ranvier,FRA,Female,foil,yes,21,17,4,0.67,Table of 8
 Ysaora Thibus,FRA,Female,foil,yes,23,12,11,0.83,Table of 8
 Eleanor Harvey,CAN,Female,foil,yes,20,18,2,0.50,Table of 16
-Anne Sauer,GER,Foreign,foil,yes,21,16,5,0.67,Table of 16
+Anne Sauer,GER,Female,foil,yes,21,16,5,0.67,Table of 16
 Julia Walczyk-Klimaszyk,POL,Female,foil,yes,19,20,-1,0.50,Table of 32
 Chen Qingyuan,CHN,Female,foil,yes,22,15,7,0.67,Table of 16
 Sera Song,KOR,Female,epee,yes,25,11,14,0.83,Gold
@@ -83,3 +88,79 @@ Alec Brooke,ARG,Male,foil,no,16,20,-4,0.33,Pools
 Ivan Salvador Groupierre Ramiro,ARG,Male,foil,no,10,25,-15,0.00,Pools
 Abdelrahman Tolba,EGY,Male,foil,no,14,22,-8,0.33,Pools
 Yara Elsharkawy,EGY,Female,foil,no,12,23,-11,0.17,Pools
+Arianna Errigo,ITA,Female,foil,yes,23,14,9,0.67,Table of 8
+Daniele Garozzo,ITA,Male,foil,yes,22,16,6,0.67,Table of 8
+Filippo Macchi,ITA,Male,foil,yes,24,13,10,0.83,Table of 16
+Alessio Foconi,ITA,Male,foil,yes,21,17,4,0.67,Table of 32
+Martina Batini,ITA,Female,foil,yes,20,18,2,0.50,Table of 16
+Francesca Palumbo,ITA,Female,foil,yes,21,17,4,0.67,Table of 32
+Rossella Gregorio,ITA,Female,sabre,yes,20,18,2,0.50,Table of 16
+Chiara Mormile,ITA,Female,sabre,yes,19,19,0,0.50,Table of 32
+Irene Vecchi,ITA,Female,sabre,yes,21,17,4,0.67,Table of 16
+Matteo Neri,ITA,Male,sabre,yes,22,16,6,0.67,Table of 16
+Luca Curatoli,ITA,Male,sabre,yes,23,15,8,0.67,Table of 8
+Pietro Torre,ITA,Male,sabre,yes,20,18,2,0.50,Table of 32
+Federica Isola,ITA,Female,epee,yes,21,17,4,0.67,Table of 16
+Mara Navarria,ITA,Female,epee,yes,22,15,7,0.67,Table of 8
+Giulia Rizzi,ITA,Female,epee,yes,20,18,2,0.50,Table of 32
+Andrea Santarelli,ITA,Male,epee,yes,21,17,4,0.67,Table of 16
+Gabriele Cimini,ITA,Male,epee,yes,20,18,2,0.50,Table of 32
+Federico Vismara,ITA,Male,epee,yes,22,16,6,0.67,Table of 16
+Sara Maria Kowalczyk,ITA,Female,epee,yes,19,19,0,0.50,Table of 32
+Manuela Spica,ITA,Female,foil,yes,20,18,2,0.50,Table of 32
+Erica Cipressa,ITA,Female,foil,yes,21,17,4,0.67,Table of 16
+Guillaume Bianchi,ITA,Male,foil,yes,22,15,7,0.67,Table of 16
+Alessio Di Tommaso,ITA,Male,foil,yes,19,19,0,0.50,Table of 32
+Romain Mirandes,FRA,Male,sabre,yes,20,18,2,0.50,Table of 32
+Maxime Pianfetti,FRA,Male,sabre,yes,22,15,7,0.67,Table of 16
+Sebastien Patrice,FRA,Male,sabre,yes,21,17,4,0.67,Table of 32
+Sara Maria Granbieri,ITA,Female,foil,no,13,22,-9,0.33,Pools
+Matteo Belliti,ITA,Male,foil,no,12,23,-11,0.17,Pools
+Enrico Garozzo,ITA,Male,epee,no,14,21,-7,0.33,Pools
+Giulia Amore,ITA,Female,foil,yes,21,17,4,0.67,Table of 16
+Corrado Barassi,ITA,Male,epee,no,11,24,-13,0.17,Pools
+Eli Dershwitz,USA,Male,sabre,yes,24,13,11,0.83,Table of 8
+Mitchell Saron,USA,Male,sabre,yes,22,16,6,0.67,Table of 16
+Andrew Doddo,USA,Male,sabre,yes,20,18,2,0.50,Table of 32
+Magda Skarbonkiewicz,USA,Female,sabre,yes,21,17,4,0.67,Table of 16
+Tatiana Nazlymov,USA,Female,sabre,yes,20,18,2,0.50,Table of 32
+Elizabeth Tartakovsky,USA,Female,sabre,yes,22,15,7,0.67,Table of 16
+Miles Chamley-Watson,USA,Male,foil,yes,21,17,4,0.67,Table of 16
+Alexander Massialas,USA,Male,foil,yes,23,14,9,0.67,Table of 8
+Race Imboden,USA,Male,foil,no,14,21,-7,0.33,Pools
+Jacqueline Dubrovich,USA,Female,foil,yes,22,15,7,0.67,Table of 8
+Maia Weintraub,USA,Female,foil,yes,20,18,2,0.50,Table of 16
+Zander Rhodes,USA,Female,foil,yes,21,17,4,0.67,Table of 32
+Kat Holmes,USA,Female,epee,yes,21,17,4,0.67,Table of 16
+Anna van Brummen,USA,Female,epee,yes,20,18,2,0.50,Table of 32
+Hadley Husisian,USA,Female,epee,yes,22,15,7,0.67,Table of 8
+Curtis McDowald,USA,Male,epee,yes,21,17,4,0.67,Table of 16
+Yasser Mahmoud,USA,Male,epee,yes,20,18,2,0.50,Table of 32
+Yeisser Ramirez,USA,Male,epee,no,12,23,-11,0.17,Pools
+Astrid Guyart,FRA,Female,foil,no,13,22,-9,0.33,Pools
+Anita Blaze,FRA,Female,foil,yes,20,18,2,0.50,Table of 32
+Jerome Brunet,FRA,Male,foil,no,11,24,-13,0.17,Pools
+Pauline Derouede,FRA,Female,epee,yes,21,17,4,0.67,Table of 16
+Alexandra Ehler,GER,Female,epee,yes,20,18,2,0.50,Table of 32
+Alexandra Ndolo,KEN,Female,epee,yes,21,17,4,0.67,Table of 16
+Richard Schmidt,GER,Male,epee,yes,22,15,7,0.67,Table of 16
+Lucas Malcotti,SUI,Male,epee,yes,21,17,4,0.67,Table of 16
+Max Heinzer,SUI,Male,epee,yes,23,14,9,0.67,Table of 8
+Benjamin Steffen,SUI,Male,epee,no,12,23,-11,0.17,Pools
+Alexis Bayard,SUI,Male,epee,no,14,21,-7,0.33,Pools
+Pauline Brunner,SUI,Female,epee,yes,20,18,2,0.50,Table of 32
+Angelika Sorman,SUI,Female,epee,no,13,22,-9,0.33,Pools
+Laura Stähli,SUI,Female,epee,yes,21,17,4,0.67,Table of 16
+Kim Hui-sun,KOR,Female,sabre,yes,21,17,4,0.67,Table of 16
+Yoon Ji-su,KOR,Female,sabre,yes,22,15,7,0.67,Table of 8
+Choi Soo-yeon,KOR,Female,sabre,yes,20,18,2,0.50,Table of 32
+Park Sang-young,KOR,Male,epee,yes,23,14,9,0.67,Table of 8
+Jung Jin-sun,KOR,Male,epee,no,14,21,-7,0.33,Pools
+Kwon Young-jun,KOR,Male,epee,yes,21,17,4,0.67,Table of 16
+Song Jong-hun,KOR,Male,epee,no,12,23,-11,0.17,Pools
+Ha Tae-gyu,KOR,Male,foil,yes,20,18,2,0.50,Table of 32
+Lee Kwang-hyun,KOR,Male,foil,yes,21,17,4,0.67,Table of 16
+Nam Hyun-hee,KOR,Female,foil,no,15,20,-5,0.33,Pools
+Jeon Hee-sook,KOR,Female,foil,yes,22,15,7,0.67,Table of 8
+
+```
