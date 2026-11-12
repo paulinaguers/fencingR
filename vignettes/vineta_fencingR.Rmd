@@ -1,0 +1,92 @@
+---
+title: "Introduction to fencingR"
+author: "Paulina Guerscovich"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to fencingR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 7,
+  fig.height = 5
+)
+```
+
+```{r setup}
+library(fencingR)
+```
+
+## Exploring the Dataset
+
+The package includes a built-in dataset, `fencing_wc2026`, which contains pool phase performance metrics and tournament progression records for a sample of athletes.
+
+The package includes a built-in dataset, fencing_wc2026, which contains pool phase performance metrics and tournament progression records for a sample of athletes.
+
+Let's take a quick look at the structure of the dataset:
+
+```{r, eval = TRUE}
+utils::head(fencing_wc2026, 5)
+```
+
+Each row represents an individual athlete and tracks critical performance indicators such as:
+
+- **`touches_given` & `touches_received`**: Raw offensive and defensive volumes during the pool stage.
+
+- **`pool_index`**: The net touch indicator ($TS - TR$).
+
+- **`pool_win_rate`**: The victory ratio in pool bouts.
+
+- **`round_reached`**: The highest tournament progression stage achieved.
+
+## 1. Analyzing National Delegation Performance: `country_pool_index()`
+
+To evaluate structural dominance and talent depth across national federations, we can calculate the average pool win rate per country. To prevent statistical distortion from isolated individual entries, the function incorporates a sample size threshold (`min_fencers = 12` by default, ensuring multi-entry representation across sexes and weapon types).
+
+```{r, eval = TRUE}
+# Calculate average pool win rates for delegations meeting the threshold
+country_rankings <- country_pool_index(fencing_wc2026, min_fencers = 12)
+
+country_rankings
+
+```
+
+## 2. Visualizing Pool Efficiency vs. Tournament Progression: `touchesgiven_effect()`
+
+In competitive fencing, pool stage performance directly dictates the initial seeding for direct elimination brackets. Fencers who dominate pools secure more favorable seeds, bypassing early encounters with top contenders.
+
+The `touchesgiven_effect()` function investigates this dynamic by plotting average pool touches against the final round reached, faceted by weapon and stratified by sex:
+
+```{r, eval = TRUE}
+touchesgiven_effect(fencing_wc2026)
+```
+
+## 3. Extracting and Visualizing Medallists
+
+Understanding who reaches the podium is crucial for competitive benchmarking.
+
+### Filtering Podium Athletes: `get_medallists()`
+
+We can use `get_medallists()` to isolate athletes who reached the podium (Gold, Silver, and Bronze medals) and extract their key identification attributes:
+
+```{r, eval = TRUE}
+podium_athletes <- get_medallists(fencing_wc2026)
+
+podium_athletes
+```
+
+### Plotting Medallists Distribution: `plot_medallists_by_country()`
+
+With the extracted subset, we can visualize the distribution of medallists across countries, broken down by weapon discipline
+
+```{r, eval = TRUE}
+plot_medallists_by_country(fencing_wc2026)
+```
+
+## Summary
+
+`fencingR` streamlines the pipeline from raw tournament metrics to high-level tactical insights. Whether you are studying seeding correlations via pool touches or mapping global podium performance, the package provides a clean, tidyverse-native framework for fencing analytics.
